@@ -5,23 +5,23 @@ export default function Hero() {
   const actBtnData = [
     {
       name: "Resume",
-      alt: "View",
       ico: "./images/document.svg",
       border: "border-sky-500/30",
+      col: "hov-blu",
       href: "https://drive.google.com/file/d/1zK52lg7qToDfBErgP12FLtdq0A83Ft8U/view?usp=sharing",
     },
     {
       name: "Contact",
-      alt: "Call",
       ico: "./images/call.svg",
       border: "border-green-500/30",
+      col: "hov-grn",
       href: "tel:+919260998607",
     },
   ];
 
   return (
     <div className="py-8">
-      <h1 className="font-bold text-5xl leading-[1.2] mb-4">
+      <h1 className="font-bold text-5xl leading-[1.2] mb-4 bg-clip-text text-transparent bg-gradient-to-br from-cyan-300 to-blue-800">
         Hello, <br /> Myself Animesh.
       </h1>
       <p className="text-gray-500 mb-4">

@@ -27,7 +27,7 @@ export default function Navbar() {
             {label}
           </Link>
           <div
-            className={`h-[2px] bg-gray-500 w-0 group-hover:w-full transition-all duration-300 ${pathname === href ? "w-full" : ""}`}
+            className={`h-[2px] bg-gray-500 w-0 group-hover:w-full cust-anim-1 ${pathname === href ? "w-full" : ""}`}
           ></div>
         </div>
       ))}
