@@ -1,21 +1,46 @@
 import Image from "next/image";
 import ActionBtn from "./ActionBtn";
+import SocialIco from "./SocialIco";
 
 export default function Hero() {
   const actBtnData = [
     {
       name: "Resume",
       ico: "./images/document.svg",
-      border: "border-sky-500/30",
+      border: "border-sky-500/10",
       col: "hov-blu",
       href: "https://drive.google.com/file/d/1zK52lg7qToDfBErgP12FLtdq0A83Ft8U/view?usp=sharing",
     },
     {
       name: "Contact",
       ico: "./images/call.svg",
-      border: "border-green-500/30",
+      border: "border-green-500/10",
       col: "hov-grn",
       href: "tel:+919260998607",
+    },
+  ];
+
+  const altBtnData = [
+    {
+      name: "Mail",
+      ico: "./images/mail.svg",
+      border: "border-red-500/10",
+      col: "hov-red",
+      href: "mailto:animesh99dev@gmail.com",
+    },
+    {
+      name: "Github",
+      ico: "./images/github.svg",
+      border: "border-purple-500/10",
+      col: "hov-pur",
+      href: "https://github.com/AnimeshDev1999",
+    },
+    {
+      name: "Linkedin",
+      ico: "./images/linkedin.svg",
+      border: "border-blue-500/10",
+      col: "hov-pur",
+      href: "https://www.linkedin.com/in/animesh-kumar-b44685217/",
     },
   ];
 
@@ -39,10 +64,17 @@ export default function Hero() {
         />
         <p>Gurgaon, Haryana, India</p>
       </div>
-      <div className="flex items-center gap-4">
-        {actBtnData.map((item, index) => (
-          <ActionBtn key={index} {...item} />
-        ))}
+      <div className="flex justify-between items-center">
+        <div className="flex items-center gap-4">
+          {actBtnData.map((item, index) => (
+            <ActionBtn key={index} {...item} />
+          ))}
+        </div>
+        <div className="flex items-center gap-4">
+          {altBtnData.map((item, index) => (
+            <SocialIco key={index} {...item} />
+          ))}
+        </div>
       </div>
     </div>
   );
