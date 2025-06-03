@@ -7,7 +7,7 @@ import { actBtnData } from "@/data/homeData";
 export default function Hero() {
   return (
     <div className="py-8">
-      <h1 className="font-bold text-5xl leading-[1.2] mb-4 bg-clip-text text-transparent bg-gradient-to-br from-cyan-300 to-blue-800">
+      <h1 className="font-bold text-5xl leading-[1.2] mb-4 bg-clip-text text-transparent bg-gradient-to-br from-blue-800 via-sky-500 to-blue-800">
         Hello, <br /> Myself Animesh.
       </h1>
       <p className="text-gray-500 mb-4">
@@ -23,7 +23,7 @@ export default function Hero() {
           width={20}
           height={20}
         />
-        <p>Gurgaon, Haryana, India</p>
+        <p>Gurugram, Haryana, India</p>
       </div>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
