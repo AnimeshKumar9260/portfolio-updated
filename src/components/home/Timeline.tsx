@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Timeline() {
   return (
-    <div className="border-sky-500/20 border-3 rounded-md">
+    <div className="border-gray-500/10 border-3 rounded-md">
       <div className="grid grid-cols-[1fr_4fr] py-8 relative">
         <div className="flex justify-center items-center">
           <div className="bg-[var(--foreground)] rounded-full h-12 w-12">

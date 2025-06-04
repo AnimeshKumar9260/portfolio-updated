@@ -1,7 +1,7 @@
 export default function ProjCard() {
   return (
-    <div>
-      <p className="text-gray-500">
+    <div className="border-gray-500/10 border-[2px] p-4 hov-blu cust-anim-1 group rounded-md">
+      <p className="text-gray-500 group-hover:text-[var(--foreground)] cust-anim-1">
         Ukiyo Stays is a immersive villa rental service website where hosts can
         rent their properties and then book a stay with the host and is a real
         world full stack website.
@@ -20,7 +20,9 @@ export default function ProjCard() {
           React
         </p>
       </div>
-      <h3 className="text-sky-500/20 font-extrabold text-6xl">Ukiyo Stays</h3>
+      <h3 className="text-sky-500/20 font-extrabold text-5xl group-hover:text-sky-500 cust-anim-1">
+        Ukiyo Stays
+      </h3>
     </div>
   );
 }

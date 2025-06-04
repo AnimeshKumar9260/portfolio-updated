@@ -7,8 +7,8 @@ import { actBtnData } from "@/data/homeData";
 export default function Hero() {
   return (
     <div className="py-8">
-      <h1 className="font-bold text-5xl leading-[1.2] mb-4 bg-clip-text text-transparent bg-gradient-to-br from-blue-800 via-sky-500 to-blue-800">
-        Hello, <br /> Myself Animesh.
+      <h1 className="font-bold text-5xl text-gray-500 leading-[1.2] mb-4">
+        Hello, <br /> Myself <span className="text-sky-600">Animesh</span>.
       </h1>
       <p className="text-gray-500 mb-4">
         I am a <span className="text-sky-500 font-semibold">MERN</span> and{" "}

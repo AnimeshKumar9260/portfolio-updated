@@ -20,7 +20,7 @@ export default function Navbar() {
             href={href}
             className={`transition-colors cursor-pointer ${
               pathname === href
-                ? "text-sky-600"
+                ? "text-sky-500"
                 : "text-gray-500 hover:text-sky-500"
             }`}
           >

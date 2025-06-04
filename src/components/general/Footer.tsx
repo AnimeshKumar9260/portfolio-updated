@@ -3,7 +3,7 @@ import SocialIco from "@/components/general/SocialIco";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-between items-center py-4">
+    <footer className="flex justify-between items-center py-6">
       <p className="text-gray-500">
         Made with ❤️ by{" "}
         <span className="text-[var(--foreground)]">Animesh Kumar</span>

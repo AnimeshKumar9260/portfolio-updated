@@ -13,6 +13,17 @@ interface Skill {
   desc: string;
 }
 
+interface Blog {
+  img?: string;
+  head: string;
+  desc: string;
+  date: string;
+  tagN: string;
+  tagC: string;
+  tagI: string;
+  content?: { title?: string; para?: string }[];
+}
+
 export const actBtnData: ActionBtn[] = [
   {
     name: "Resume",
@@ -84,5 +95,24 @@ export const skillsDat: Skill[] = [
     accent: "bg-fuchsia-600/20",
     name: "SCSS",
     desc: "CSS preprocessor",
+  },
+];
+
+export const blogData1: Blog[] = [
+  {
+    head: "Apple Intelligence is finally here!",
+    desc: "In 2023, Apple unveiled its latest development in artificial intelligence: Apple Intelligence. Building on the company’s core principles of privacy, ease of use, and performance, Apple Intelligence represents ...",
+    date: "November 3, 2024",
+    tagN: "Education",
+    tagC: "bg-green-500/20",
+    tagI: "/images/book.svg",
+  },
+  {
+    head: "New VR from Meta?",
+    desc: "Meta recently unveiled its latest innovation in augmented reality with the introduction of the Orion glasses, previously codenamed Project Nazare. These glasses are being touted as the most advanced AR glasses to date, designed ...",
+    date: "November 2, 2024",
+    tagN: "Education",
+    tagC: "bg-green-500/20",
+    tagI: "/images/book.svg",
   },
 ];
