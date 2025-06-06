@@ -3,7 +3,7 @@ import Bio from "@/components/home/Bio";
 import Hero from "@/components/home/Hero";
 import SkillPill from "@/components/home/SkillPill";
 import ProjCard from "@/components/projects/ProjCard";
-import { skillsDat, blogData1 } from "@/data/homeData";
+import { skillsDat, blogData1, projHigh } from "@/data/homeData";
 
 export default function Home() {
   return (
@@ -27,10 +27,9 @@ export default function Home() {
           Project highlights
         </h2>
         <div className="grid grid-cols-2 gap-6">
-          <ProjCard />
-          <ProjCard />
-          <ProjCard />
-          <ProjCard />
+          {projHigh.map((item, index) => (
+            <ProjCard key={index} {...item} />
+          ))}
         </div>
       </div>
       {/* Blog */}
@@ -40,7 +39,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-2 gap-6">
           {blogData1.map((item, index) => (
-            <BlogCard key={index} big={index % 2 === 0} {...item} />
+            <BlogCard key={index} big={index === 0} {...item} />
           ))}
         </div>
       </div>
