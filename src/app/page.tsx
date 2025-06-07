@@ -35,8 +35,8 @@ export default function Home() {
       </div>
       {/* Blog */}
       <div className="py-8">
-        <h2 className="text-3xl text-gray-500 mb-6 font-semibold">
-          Recent posts
+        <h2 className="text-3xl text-[var(--foreground)] mb-6 font-semibold">
+          Recent <span className="text-[var(--accent)]">articles</span>
         </h2>
         <div className="grid grid-cols-2 gap-6">
           {blogData1.map((item, index) => (

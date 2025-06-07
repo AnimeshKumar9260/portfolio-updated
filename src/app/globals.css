@@ -34,6 +34,9 @@ body {
   .cust-anim-1 {
     @apply transition-all duration-500;
   }
+  .cust-anim-2 {
+    @apply transition-all duration-1000;
+  }
   .hov-blu:hover {
     /* box-shadow: rgba(59, 130, 246, 0.5) 0px 4px 40px; */
     background-color: rgba(59, 130, 246, 0.2);
