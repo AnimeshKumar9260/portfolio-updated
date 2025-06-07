@@ -21,7 +21,7 @@ export default function BlogCard({
     <div
       className={` ${
         big && "col-span-2"
-      } border-[var(--foreground)]/10 group/blog border-2 hover:bg-[var(--foreground)]/10 cust-anim-1 group p-4 rounded-md`}
+      } border-[var(--foreground)]/10 relative overflow-hidden group/blog border-2 hover:bg-[var(--foreground)]/10 cust-anim-1 group p-4 rounded-md`}
     >
       <h3 className="text-lg text-[var(--foreground)] group-hover/blog:text-[var(--accent)] cust-anim-1 font-semibold mb-2">
         {head}
@@ -40,6 +40,12 @@ export default function BlogCard({
             {tagN}
           </p>
         </div>
+      </div>
+      <div className="absolute -translate-x-[100%] group-hover/blog:translate-0 cust-anim-1 bg-[var(--light)] top-0 left-0 h-full w-full"></div>
+      <div className="absolute -translate-x-[100%] group-hover/blog:translate-0 cust-anim-2 top-0 left-0 h-full w-full flex">
+        <button className="h-full w-full bg-[var(--dark)] cursor-pointer text-[var(--foreground)]/70">
+          Read Article
+        </button>
       </div>
     </div>
   );

@@ -27,11 +27,12 @@ export default function ProjCard({
         ))}
       </div>
       <h3 className="text-[var(--light)] font-extrabold text-5xl">{name}</h3>
-      <div className="absolute top-0 left-0 h-full w-full flex">
-        <button className="h-full w-full bg-[var(--light)] cursor-pointer text-[var(--foreground)]/70 cust-anim-1 -translate-x-[100%] group-hover:translate-x-0">
+      <div className="absolute -translate-x-[100%] group-hover:translate-0 cust-anim-1 bg-[var(--light)] top-0 left-0 h-full w-full"></div>
+      <div className="absolute -translate-x-[100%] group-hover:translate-0 cust-anim-2 top-0 left-0 h-full w-full flex">
+        <button className="h-full w-full bg-[var(--dark)] cursor-pointer text-[var(--foreground)]/70">
           View Page
         </button>
-        <button className="h-full w-full bg-[var(--light)] cursor-pointer text-[var(--foreground)]/70 cust-anim-1 translate-x-[100%] group-hover:translate-x-0">
+        <button className="h-full w-full bg-[var(--dark)] cursor-pointer text-[var(--foreground)]/70">
           View Source
         </button>
       </div>
