@@ -20,14 +20,16 @@ export default function Navbar() {
             href={href}
             className={`transition-colors cursor-pointer ${
               pathname === href
-                ? "text-sky-500"
-                : "text-gray-500 hover:text-sky-500"
+                ? "text-[var(--accent)]"
+                : "text-[var(--light)] hover:text-[var(--accent)]"
             }`}
           >
             {label}
           </Link>
           <div
-            className={`h-[2px] bg-gray-500 w-0 group-hover:w-full cust-anim-1 ${pathname === href ? "w-full" : ""}`}
+            className={`h-[2px] bg-[var(--accent)] w-0 group-hover:w-full cust-anim-1 ${
+              pathname === href ? "w-full" : ""
+            }`}
           ></div>
         </div>
       ))}

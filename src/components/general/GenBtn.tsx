@@ -1,30 +1,19 @@
-import Image from "next/image";
-
-export default function ActionBtn({
+export default function GenBtn({
   name,
-  ico,
-  href,
   col,
+  link,
 }: {
   name: string;
-  ico: string;
-  href: string;
   col: string;
+  link: string;
 }) {
   return (
     <a
+      href={link}
       target="_blank"
       rel="noopener noreferrer"
-      href={href}
       className={`flex justify-center group/action items-center cust-anim-1 ${col} gap-3 border-2 border-[var(--foreground)]/10 px-4 py-1 rounded-md cursor-pointer`}
     >
-      <Image
-        src={ico}
-        alt={name}
-        width={20}
-        height={20}
-        className="filter cust-anim-1 opacity-80 group-hover/action:opacity-100"
-      />
       <p className="text-[var(--accent)]">{name}</p>
     </a>
   );

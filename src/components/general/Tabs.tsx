@@ -8,12 +8,16 @@ export default function Tabs({
   tab: string;
 }) {
   return (
-    <div className="border-gray-500/10 border-3 bg-gray-500/10 rounded-md grid grid-cols-3">
+    <div className="border-[var(--foreground)]/10 border-2 rounded-md grid grid-cols-3">
       <button
         onClick={() => {
           funcAction("tab1");
         }}
-        className={`cust-anim-1 font-semibold rounded-sm p-1 cursor-pointer ${tab === "tab1" ? "bg-sky-500/20 text-[var(--foreground)]" : "text-gray-500 "}`}
+        className={`cust-anim-1 rounded-sm p-1 cursor-pointer ${
+          tab === "tab1"
+            ? "bg-[var(--acclight)]/50 text-[var(--foreground)]"
+            : "text-[var(--foreground)]/70"
+        }`}
       >
         Work
       </button>
@@ -21,7 +25,11 @@ export default function Tabs({
         onClick={() => {
           funcAction("tab2");
         }}
-        className={`cust-anim-1 font-semibold rounded-sm p-1 cursor-pointer ${tab === "tab2" ? "bg-sky-500/20 text-[var(--foreground)]" : "text-gray-500 "}`}
+        className={`cust-anim-1 rounded-sm p-1 cursor-pointer ${
+          tab === "tab2"
+            ? "bg-[var(--acclight)]/50 text-[var(--foreground)]"
+            : "text-[var(--foreground)]/70"
+        }`}
       >
         Education
       </button>
@@ -29,7 +37,11 @@ export default function Tabs({
         onClick={() => {
           funcAction("tab3");
         }}
-        className={`cust-anim-1 font-semibold rounded-sm p-1 cursor-pointer ${tab === "tab3" ? "bg-sky-500/20 text-[var(--foreground)]" : "text-gray-500 "}`}
+        className={`cust-anim-1 rounded-sm p-1 cursor-pointer ${
+          tab === "tab3"
+            ? "bg-[var(--acclight)]/50 text-[var(--foreground)]"
+            : "text-[var(--foreground)]/70"
+        }`}
       >
         Certificates
       </button>
