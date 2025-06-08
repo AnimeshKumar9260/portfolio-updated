@@ -18,10 +18,10 @@ export default function Navbar() {
         <div key={href} className="flex flex-col justify-center group">
           <Link
             href={href}
-            className={`transition-colors cursor-pointer ${
+            className={`transition-colors cursor-pointer font-semibold ${
               pathname === href
                 ? "text-[var(--accent)]"
-                : "text-[var(--light)] hover:text-[var(--accent)]"
+                : "text-[var(--foreground)]/40 hover:text-[var(--accent)]"
             }`}
           >
             {label}

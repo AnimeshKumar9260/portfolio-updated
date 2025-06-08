@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Georama } from "next/font/google";
 import Navbar from "@/components/general/Navbar";
 import Footer from "@/components/general/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const georama = Georama({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-georama", // this adds a CSS variable you can use
 });
 
 export const metadata: Metadata = {
@@ -28,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col max-w-[800px] md:mx-auto mx-5`}
+        className={`${georama.variable} antialiased flex flex-col max-w-[800px] md:mx-auto mx-5`}
       >
         <Navbar />
         {children}

@@ -25,7 +25,9 @@ export default function Hero() {
           height={20}
           className="filter opacity-80"
         />
-        <p className="text-[var(--accent)]">Gurugram, Haryana, India</p>
+        <p className="text-[var(--accent)] font-semibold">
+          Gurugram, Haryana, India
+        </p>
       </div>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">

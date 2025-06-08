@@ -16,7 +16,7 @@ export default function SocialIco({
       target="_blank"
       rel="noopener noreferrer"
       href={href}
-      className={`flex justify-center group/actico items-center cust-anim-1 ${col} gap-3 border-2 border-[var(--foreground)]/10 px-4 py-1 rounded-md cursor-pointer`}
+      className={`flex justify-center group/actico items-center cust-anim-1 ${col} gap-3 cust-bord px-4 py-1 rounded-md cursor-pointer`}
     >
       <Image
         src={ico}

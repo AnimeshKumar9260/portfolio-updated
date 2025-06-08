@@ -16,7 +16,7 @@ export default function ActionBtn({
       target="_blank"
       rel="noopener noreferrer"
       href={href}
-      className={`flex justify-center group/action items-center cust-anim-1 ${col} gap-3 border-2 border-[var(--foreground)]/10 px-4 py-1 rounded-md cursor-pointer`}
+      className={`flex justify-center group/action items-center cust-anim-1 ${col} gap-3 cust-bord px-4 py-1 rounded-md cursor-pointer`}
     >
       <Image
         src={ico}
@@ -25,7 +25,7 @@ export default function ActionBtn({
         height={20}
         className="filter cust-anim-1 opacity-80 group-hover/action:opacity-100"
       />
-      <p className="text-[var(--accent)]">{name}</p>
+      <p className="text-[var(--foreground)]/70 font-semibold">{name}</p>
     </a>
   );
 }

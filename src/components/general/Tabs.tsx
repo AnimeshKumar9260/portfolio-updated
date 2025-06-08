@@ -8,15 +8,15 @@ export default function Tabs({
   tab: string;
 }) {
   return (
-    <div className="border-[var(--foreground)]/10 border-2 rounded-md grid grid-cols-3">
+    <div className="cust-bord rounded-md grid grid-cols-3">
       <button
         onClick={() => {
           funcAction("tab1");
         }}
-        className={`cust-anim-1 rounded-sm p-1 cursor-pointer ${
+        className={`cust-anim-1 rounded-sm p-1 font-semibold cursor-pointer ${
           tab === "tab1"
             ? "bg-[var(--acclight)]/50 text-[var(--foreground)]"
-            : "text-[var(--foreground)]/70"
+            : "text-[var(--foreground)]/40"
         }`}
       >
         Work
@@ -25,10 +25,10 @@ export default function Tabs({
         onClick={() => {
           funcAction("tab2");
         }}
-        className={`cust-anim-1 rounded-sm p-1 cursor-pointer ${
+        className={`cust-anim-1 rounded-sm p-1 font-semibold cursor-pointer ${
           tab === "tab2"
             ? "bg-[var(--acclight)]/50 text-[var(--foreground)]"
-            : "text-[var(--foreground)]/70"
+            : "text-[var(--foreground)]/40"
         }`}
       >
         Education
@@ -37,10 +37,10 @@ export default function Tabs({
         onClick={() => {
           funcAction("tab3");
         }}
-        className={`cust-anim-1 rounded-sm p-1 cursor-pointer ${
+        className={`cust-anim-1 rounded-sm p-1 font-semibold cursor-pointer ${
           tab === "tab3"
             ? "bg-[var(--acclight)]/50 text-[var(--foreground)]"
-            : "text-[var(--foreground)]/70"
+            : "text-[var(--foreground)]/40"
         }`}
       >
         Certificates
