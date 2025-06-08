@@ -27,7 +27,7 @@ export default function RootLayout({
         className={`${georama.variable} antialiased flex flex-col max-w-[800px] md:mx-auto mx-5`}
       >
         <Navbar />
-        {children}
+        <div className="grow"> {children}</div>
         <Footer />
       </body>
     </html>
